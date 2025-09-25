@@ -3,8 +3,6 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { ServeStaticModule } from '@nestjs/serve-static';
 import { join } from 'path';
-import { TransporteModule } from './api/transporte/transporte.module';
-import { VAcarreosModule } from './api/v-acarreos/v-acarreos.module';
 
 @Module({
   imports: [
