@@ -1,0 +1,31 @@
+import { PaginatedDto } from "./paginated-swagger.helper";
+import { ResponseAcarreoDto } from "../acarreo/response-acarreo.dto";
+import { ResponseClienteDto } from "../cliente/response-cliente.dto";
+import { ResponseConductorDto } from "../conductor/response-conductor.dto";
+import { ResponseConductorTipoDto } from "../conductor_tipo/response-conductor-tipo.dto";
+import { ResponseEstadoDto } from "../estado/response-estado.dto";
+import { ResponseIEDto } from "../ie/response-ie.dto";
+import { ResponseIncidenciaTipoDto } from "../incidencia_tipo/response-incidencia-tipo.dto";
+import { ResponseMatriculaDto } from "../matricula/response-matricula.dto";
+import { ResponseMatriculaTipoDto } from "../matricula_tipo/response-matricula-tipo.dto";
+import { ResponseOrdenDto } from "../orden/response-orden.dto";
+import { ResponsePoblacionDto } from "../poblacion/response-poblacion.dto";
+import { ResponseTamanioDto } from "../tamanio/response-tamanio.dto";
+import { ResponseTamanioLetraDto } from "../tamanio_letra/response-tamanio-letra.dto";
+import { ResponseTamanioNumDto } from "../tamanio_num/response-tamanio-num.dto";
+
+export const PaginatedAcarreoDto = PaginatedDto(ResponseAcarreoDto);
+export const PaginatedClienteDto = PaginatedDto(ResponseClienteDto);
+export const PaginatedConductorDto = PaginatedDto(ResponseConductorDto);
+export const PaginatedConductorTipoDto = PaginatedDto(ResponseConductorTipoDto);
+export const PaginatedEstadoDto = PaginatedDto(ResponseEstadoDto);
+export const PaginatedIEDto = PaginatedDto(ResponseIEDto);
+export const PaginatedIncidenciaTipoDto = PaginatedDto(ResponseIncidenciaTipoDto);
+export const PaginatedMatriculaDto = PaginatedDto(ResponseMatriculaDto);
+export const PaginatedMatriculaTipoDto = PaginatedDto(ResponseMatriculaTipoDto);
+export const PaginatedOrdenDto = PaginatedDto(ResponseOrdenDto);
+export const PaginatedPoblacionDto = PaginatedDto(ResponsePoblacionDto);
+export const PaginatedTamanioDto = PaginatedDto(ResponseTamanioDto);
+export const PaginatedTamanioLetraDto = PaginatedDto(ResponseTamanioLetraDto);
+export const PaginatedTamanioNumDto = PaginatedDto(ResponseTamanioNumDto);
+
