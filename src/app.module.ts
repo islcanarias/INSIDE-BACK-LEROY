@@ -9,27 +9,15 @@ import { VAcarreosModule } from './api/v-acarreos/v-acarreos.module';
 @Module({
   imports: [
     ServeStaticModule.forRoot({
-      rootPath: join(__dirname, '..', '..', 'INSIDE-FRONT-TRANSPORTE-HOME', 'dist'),
+      rootPath: join(__dirname, '..', '..', 'INSIDE-FRONT-LEROY-HOME', 'dist'),
       serveRoot: '/home',
       exclude: ['/api*'],
     }),
     ServeStaticModule.forRoot({
-      rootPath: join(__dirname, '..', '..', 'INSIDE-FRONT-TRANSPORTE-RUTASCOFARTE', 'dist'),
-      serveRoot: '/disa',
+      rootPath: join(__dirname, '..', '..', 'INSIDE-FRONT-LEROY-PEDIDOS', 'dist'),
+      serveRoot: '/pedidos',
       exclude: ['/api*'],
     }),
-    ServeStaticModule.forRoot({
-      rootPath: join(__dirname, '..', '..', 'INSIDE-FRONT-TRANSPORTE-COFARTE', 'dist'),
-      serveRoot: '/cofarte',
-      exclude: ['/api*'],
-    }),
-    ServeStaticModule.forRoot({
-      rootPath: join(__dirname, '..', '..', 'INSIDE-FRONT-TRANSPORTE-V-ACARREOS', 'dist'),
-      serveRoot: '/v-acarreos',
-      exclude: ['/api*'],
-    }),
-    TransporteModule,
-    VAcarreosModule,
   ],
   controllers: [AppController],
   providers: [AppService],
