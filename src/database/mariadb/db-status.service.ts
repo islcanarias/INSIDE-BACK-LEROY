@@ -7,6 +7,7 @@ export class DbStatusService {
     constructor(
         @Inject('core_db') private readonly core_db: mariadb.Pool,
         @Inject('transporte_db') private readonly transporte_db: mariadb.Pool,
+        @Inject('leroy_db') private readonly leroy_db: mariadb.Pool,
         //@Inject('otra_db') private readonly otraDb: Pool,
         //@Inject('log_db') private readonly log_db: Pool,
         //@Inject('users_db') private readonly users_db: Pool,
@@ -17,6 +18,7 @@ export class DbStatusService {
         const dbMap: Record<string, mariadb.Pool> = {
             core_db: this.core_db,
             transporte_db: this.transporte_db,
+            leroy_db: this.leroy_db,
             //log: this.log_db,
             //users: this.users_db,
         };
